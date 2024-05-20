@@ -1,0 +1,367 @@
+@media (max-width: 1440px) {
+  .work_section li.glide__slide.glide__slide--active h3 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 60%;
+  }
+
+  .HeroImage,
+  .HeroImagetwo {
+    max-width: 50%;
+  }
+
+  .hero_section {
+    padding: 0 120px !important;
+    gap: 11.563rem;
+  }
+
+  .developerTabcontent,
+  .occupierTabcontent,
+  .investorTabcontent {
+    max-height: 100%;
+  }
+
+  .work_section li.glide__slide.glide__slide--active h3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1199px) {
+  html {
+    font-size: 60%;
+  }
+
+  .serviceContent h2 {
+    margin-bottom: 4px;
+    font-size: 20px;
+  }
+
+  .logoDiv img {
+    max-width: 85%;
+  }
+
+  .ourServiceMain {
+    gap: 30px;
+    padding: 9.375rem 0 9.375rem 20px;
+  }
+
+  .serviceContentLists ul {
+    gap: 5px;
+  }
+
+  .serviceContentLists {
+    padding: 20px 10px;
+  }
+
+  .viewReportsSectionMain {
+    grid-template-columns: 300px 1fr;
+  }
+
+  .viewReportsSectionRMain {
+    gap: 20px;
+  }
+
+  .viewReportsSectionRModal {
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+  }
+
+  .viewReportsSectionRModalR p {
+    font-size: 12px;
+  }
+
+  .viewReportsSectionRModalL h2 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .viewReportsSectionRModalL img {
+    max-height: 200px;
+  }
+
+  .viewReportsSectionR,
+  .viewReportsModalTwo {
+    padding: 90px 35px;
+  }
+
+  .viewReportsSectionR svg {
+    left: 6px;
+    top: 94px;
+    font-size: 17px;
+  }
+
+  .viewReportsSectionRInner img {
+    height: 160px;
+  }
+
+  .ourServiceMain {
+    grid-template-columns: 1fr 300px;
+  }
+}
+
+
+@media (max-width: 991px) {
+
+  .loader p,
+  .page1LastPart p {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .whatWeDoSection h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .whatWeDoSection p {
+    font-size: 12px;
+  }
+
+  aside {
+    left: 15px;
+  }
+
+  .searchDropdownMain.borderReaiusClass {
+    width: 350px;
+  }
+
+  .work_section li.glide__slide.glide__slide--active img,
+  .work_section .glide__slides img {
+    max-height: 300px;
+  }
+
+  .work_section li.glide__slide.glide__slide--active h3 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .reportsSectionR h2 {
+    font-size: 28px;
+    line-height: 24.65px;
+  }
+
+  .reportsSectionR p {
+    font-size: 12px;
+  }
+
+  .reportsSectionR p {
+    margin: 16px 0;
+  }
+
+  .navDots li.active {
+    width: 22px;
+    height: 22px;
+  }
+
+  .ourServiceL button {
+    padding: 0 15px;
+  }
+
+  .ourServiceL button,
+  .ourServiceL button.active {
+    font-size: 12px;
+  }
+
+  .serviceContent h2 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .viewReportsSectionMain {
+    grid-template-columns: 220px 1fr;
+  }
+
+  .viewReportsSectionL ul {
+    gap: 40px;
+  }
+
+  .viewReportsSectionL ul li {
+    font-size: 12px;
+    line-height: 16.8px;
+    padding: 0 12px;
+  }
+
+  .viewReportsSectionRInner img {
+    height: 140px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  aside,
+  .hero_section .descDiv,
+  .hero_section .halfCircleCss,
+  .hero_section .logoDiv,
+  .hero_section .heroImageTwoDiv,
+  .hero_section .HeroImage,
+  .searchDropdownMain,
+  .whatWeDoSection p br,
+  #panel5 .ourServiceR {
+    display: none;
+  }
+
+  .reports_section,
+  .reactUsSection,
+  .padding-lr,
+  .ourServiceSection {
+    padding: 0 15px;
+  }
+
+  .work_section .glide div[data-glide-el="controls"] {
+    justify-content: space-between;
+  }
+
+  .reportsSectionMain {
+    gap: 15px;
+    grid-template-columns: 1fr;
+    padding: 27px 0 0;
+  }
+
+  .navDots {
+    margin: 27px auto;
+    justify-content: center;
+  }
+
+  .ourServiceMain {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .loader p,
+  .page1LastPart p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .whatWeDoSection p {
+    font-size: 10px;
+  }
+
+  .heightFull {
+    height: unset;
+  }
+
+  .work_section,
+  .hero_section {
+    height: 100vh;
+  }
+
+  .ourServiceSection {
+    height: 120vh;
+  }
+
+  .work_section .glide__slide.glide__slide--active {
+    scale: 1;
+  }
+
+  .work_section li.glide__slide.glide__slide--active h3 {
+    font-size: 14px;
+  }
+
+  .work_section li.glide__slide.glide__slide--active p {
+    font-size: 12px;
+  }
+
+  .reportsSectionL img.active {
+    max-width: 200px;
+    margin: auto;
+  }
+
+  .viewReportsSection {
+    height: 100%;
+  }
+
+  .viewReportsSectionL ul {
+    gap: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+  }
+
+  .serviceContentLists ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .serviceContentLists ul li {
+    font-size: 11px;
+  }
+
+  .viewReportsSectionL {
+    padding: 0;
+  }
+
+  .ourServiceSection .ourServiceMain {
+    padding: 20px 0;
+  }
+
+  .developerTabcontent,
+  .occupierTabcontent,
+  .investorTabcontent {
+    min-height: 400px;
+  }
+
+  .ourTeamSliderInner img {
+    max-width: 300px;
+  }
+
+  .team {
+    z-index: 10;
+    bottom: 0;
+  }
+
+  .team.next-team {
+    right: 0;
+  }
+
+  .team.prev-team {
+    left: 0;
+  }
+
+  .ourTeamSliderInner h2 {
+    font-size: 20px;
+    line-height: 24.65px;
+  }
+
+  .ourTeamSliderInner p {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+
+  .reactUsSection .ourServiceL {
+    margin-top: 30px;
+  }
+
+  .formInner {
+    margin: 20px 0 40px;
+  }
+
+  .imageAndParaForMobView {
+    display: block;
+  }
+
+  .imageAndParaForMobView img {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+  }
+
+  .imageAndParaForMobView p {
+    font-family: Gilroy-Medium;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.98px;
+    text-align: justify;
+    position: absolute;
+    bottom: 14%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 18px;
+  }
+}

@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAW</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+</head>
+
+<body>
+    <!-- <div class="loader">
+        <span>
+            <svg width="104" height="77" viewBox="0 0 104 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M103.226 70.3925V76.2532H80.9793V58.4427V57.9427H80.4793H23.4656H22.9656V58.4427V76.2532H0.5V0.5H70.1733C77.6842 0.5 83.5036 0.664961 88.0176 1.32037C92.5326 1.97592 95.6778 3.11416 97.8894 5.01136C100.091 6.90019 101.432 9.59706 102.217 13.5117C103.005 17.4363 103.226 22.5318 103.226 29.1644C103.226 34.838 102.542 38.5491 101.12 41.2089C99.709 43.8482 97.5378 45.5146 94.408 47.0245L93.5065 47.4594L94.3957 47.919C97.5898 49.57 99.7128 50.6847 101.111 53.5599C102.535 56.488 103.226 61.2874 103.226 70.3925ZM80.8697 19.1872V18.6872H80.3697H23.4656H22.9656V19.1872V39.2511V39.7511H23.4656H80.3697H80.8697V39.2511V19.1872Z"
+                    stroke="#1c6ff4" />
+            </svg>
+            <svg width="76" height="78" viewBox="0 0 76 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-inside-1_356_1007" fill="white">
+                    <path d="M16.8118 17.8726L16.7548 17.9821L20.0162 23.7686L16.8118 17.8726Z" />
+                </mask>
+                <path
+                    d="M16.8118 17.8726L17.6904 17.395L16.7923 15.7426L15.9245 17.4112L16.8118 17.8726ZM16.7548 17.9821L15.8676 17.5208L15.6177 18.0013L15.8836 18.4732L16.7548 17.9821ZM20.0162 23.7686L19.145 24.2596L20.8948 23.291L20.0162 23.7686ZM15.9245 17.4112L15.8676 17.5208L17.642 18.4435L17.699 18.3339L15.9245 17.4112ZM15.8836 18.4732L19.145 24.2596L20.8873 23.2775L17.6259 17.4911L15.8836 18.4732ZM20.8948 23.291L17.6904 17.395L15.9331 18.3501L19.1376 24.2461L20.8948 23.291Z"
+                    fill="#1c6ff4" mask="url(#path-1-inside-1_356_1007)" />
+                <path
+                    d="M74.6333 77.1301H49.5644L42.7981 64.7825L42.6558 64.5228H42.3596H10.5356L1.35634 48.4178H33.1496H33.9907L33.5888 47.6789L20.4555 23.5296L20.4555 23.5295L17.2511 17.6336L16.802 16.8073L16.7367 16.9329L7.95409 1.37695H33.5096L74.6333 77.1301Z"
+                    stroke="#1c6ff4" />
+            </svg>
+            <svg width="161" height="78" viewBox="0 0 161 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M109.73 53.3066L137.832 1.37695H160.2L123.234 77.1301H96.598L81.0358 33.2758L80.5646 31.9479L80.0934 33.2758L64.5312 77.1301H38.005L1.03911 1.37695H23.4065L51.5085 53.3066L52.0488 54.305L52.4206 53.2323L70.3954 1.37695H90.8434L108.818 53.2323L109.19 54.305L109.73 53.3066Z"
+                    stroke="#1c6ff4" />
+            </svg>
+        </span>
+        <p>The management consultancy for what is <br> <span>built</span> next…</p>
+    </div> -->
+
+    <div class="scrollToExplore">
+        <div class="mouseWithScroll">
+            <svg width="19" height="30" viewBox="0 0 19 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M8.00003 8.84326C8.00003 7.83008 8.81394 7 9.80739 7C10.8032 7 11.6147 7.83008 11.6147 8.84326L11.6147 10.7427C11.6147 11.7559 10.8008 12.5859 9.80739 12.5859C8.81394 12.5859 8.00003 11.7559 8.00003 10.7427L8.00003 8.84326Z"
+                    fill="#1C6FF4" />
+                <path
+                    d="M6.98043 0.304992C5.37415 0.756652 3.93545 1.63312 2.78879 2.80255C1.06761 4.55792 -4.56712e-05 6.9798 -4.59043e-05 9.64581L-4.68368e-05 20.3123C-4.70699e-05 22.9783 1.06761 25.4002 2.78879 27.1556C4.50997 28.9109 6.88467 29.9998 9.49876 29.9998C12.1104 29.9998 14.4875 28.9109 16.2087 27.1556C17.9299 25.4002 18.9976 22.9759 18.9976 20.3123L18.9976 9.64825C18.9976 6.98224 17.9299 4.56036 16.2087 2.80499C14.8706 1.44025 13.1398 0.478332 11.208 0.117004C10.0398 -0.102723 8.05766 0.00225734 6.98043 0.304992ZM4.37591 4.4212C5.69014 3.08087 7.50468 2.24591 9.49876 2.24591C11.4928 2.24591 13.305 3.07843 14.6216 4.4212C15.9358 5.76154 16.7545 7.61212 16.7545 9.64581L16.7545 20.3123C16.7545 22.346 15.9382 24.1942 14.6216 25.5369C13.3074 26.8773 11.4928 27.7122 9.49876 27.7122C7.50468 27.7122 5.69253 26.8797 4.37591 25.5369C3.06169 24.1966 2.24299 22.346 2.24299 20.3123L2.24299 9.64825C2.24299 7.61212 3.0593 5.76398 4.37591 4.4212Z"
+                    fill="#292929" />
+            </svg>
+        </div>
+        <p>Scroll to explore</p>
+    </div>
+
+    <div class="fixedDiv">
+        <nav class="padding-lr">
+            <div class="logoWIthSearchDropdown">
+                <a href="index.html"><img src="/images/logo.svg" alt="Raw Logo"></a>
+                <div class="searchDropdownMain position-relative">
+                    <div class="searchDropdownInputWithIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="#e5e5e5"
+                                d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39M11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7" />
+                        </svg>
+                        <input type="text" name="search-dropdown" autocomplete="off" id="searchInput"
+                            placeholder="Search Services">
+                    </div>
+                    <div class="searchDropdownContent">
+                        <div class="w3-bar w3-black">
+                            <button rel="serv1" class="w3-bar-item w3-button active"
+                                onclick="selectTabs('Developers')">Developers</button>
+                            <button rel="serv2" class="w3-bar-item w3-button"
+                                onclick="selectTabs('Investors')">Investors</button>
+                            <button rel="serv3" class="w3-bar-item w3-button"
+                                onclick="selectTabs('Occupier')">Occupier</button>
+                            <!-- <button class="w3-bar-item w3-button" onclick="selectTabs('Banks')">Banks</button>
+                            <button class="w3-bar-item w3-button" onclick="selectTabs('Brokers')">Brokers</button> -->
+                        </div>
+                        <div class="searchDropdownTabContent">
+                            <div id="Developers" class="city">
+                                <ul>
+                                    <li>Go/No-Go Study​</li>
+                                    <li>TEV Study</li>
+                                    <li>Feasibility Study​</li>
+                                    <li>Product Planning​</li>
+                                </ul>
+                            </div>
+
+                            <div id="Investors" class="city" style="display:none">
+                                <ul>
+                                    <li>Go/No-Go Study​</li>
+                                    <li>TEV Study</li>
+                                    <li>Feasibility Study​</li>
+                                    <li>Predictive Analytics​</li>
+                                    <li>Product Planning​</li>
+                                </ul>
+                            </div>
+
+                            <div id="Occupier" class="city" style="display:none">
+                                <ul>
+                                    <li>Go/No-Go Study​</li>
+                                    <li>TEV Study</li>
+                                    <li>Feasibility Study​</li>
+                                    <li>Highest & Best Use​</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="contactBtn myBtn">Contact Us</button>
+        </nav>
+    </div>
+    <aside>
+        <a href="#panel1" class="active asideTab1">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M7.51669 2.36667L3.02502 5.86667C2.27502 6.45 1.66669 7.69167 1.66669 8.63334V14.8083C1.66669 16.7417 3.24169 18.325 5.17502 18.325H14.825C16.7584 18.325 18.3334 16.7417 18.3334 14.8167V8.75C18.3334 7.74167 17.6584 6.45 16.8334 5.875L11.6834 2.26667C10.5167 1.45 8.64169 1.49167 7.51669 2.36667Z"
+                    stroke="#989898" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10 14.9917V12.4917" stroke="#989898" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+        <a href="#panel2" class="asideTab2">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M4.91664 14.1666H15.075C16.6583 14.1666 17.4916 13.3333 17.4916 11.75V1.66663H2.49164V11.75C2.49997 13.3333 3.33331 14.1666 4.91664 14.1666Z"
+                    stroke="#989898" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M1.66669 1.66663H18.3334" stroke="#989898" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M6.66669 18.3333L10 16.6666V14.1666" stroke="#989898" stroke-miterlimit="10"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M13.3333 18.3333L10 16.6666" stroke="#989898" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path
+                    d="M6.25 9.16663L8.87499 6.97496C9.08333 6.79996 9.35833 6.84996 9.49999 7.08329L10.5 8.74996C10.6417 8.98329 10.9167 9.02496 11.125 8.8583L13.75 6.66663"
+                    stroke="#989898" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+        <a href="#panel3" class="asideTab3">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M18.05 8.70005L17.2333 12.1834C16.5333 15.1917 15.15 16.4084 12.55 16.1584C12.1333 16.125 11.6833 16.05 11.2 15.9334L9.79999 15.6C6.32499 14.775 5.24999 13.0584 6.06665 9.57505L6.88332 6.08338C7.04999 5.37505 7.24999 4.75838 7.49999 4.25005C8.47499 2.23338 10.1333 1.69171 12.9167 2.35005L14.3083 2.67505C17.8 3.49171 18.8667 5.21671 18.05 8.70005Z"
+                    stroke="#989898" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M12.55 16.1583C12.0333 16.5083 11.3833 16.8 10.5916 17.0583L9.27498 17.4917C5.96665 18.5583 4.22498 17.6667 3.14998 14.3583L2.08331 11.0667C1.01665 7.75833 1.89998 6.00833 5.20831 4.94167L6.52498 4.50833C6.86665 4.4 7.19165 4.30833 7.49998 4.25C7.24998 4.75833 7.04998 5.375 6.88331 6.08333L6.06665 9.575C5.24998 13.0583 6.32498 14.775 9.79998 15.6L11.2 15.9333C11.6833 16.05 12.1333 16.125 12.55 16.1583Z"
+                    stroke="#989898" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10.5333 7.10834L14.575 8.13334" stroke="#989898" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M9.71667 10.3333L12.1333 10.95" stroke="#989898" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </a>
+        <a href="#panel5" class="asideTab4">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z"
+                    stroke="#989898" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M1.66669 10.7334V9.26669C1.66669 8.40003 2.37502 7.68336 3.25002 7.68336C4.75835 7.68336 5.37502 6.6167 4.61669 5.30836C4.18335 4.55836 4.44169 3.58336 5.20002 3.15003L6.64169 2.32503C7.30002 1.93336 8.15002 2.1667 8.54169 2.82503L8.63335 2.98336C9.38335 4.2917 10.6167 4.2917 11.375 2.98336L11.4667 2.82503C11.8584 2.1667 12.7084 1.93336 13.3667 2.32503L14.8084 3.15003C15.5667 3.58336 15.825 4.55836 15.3917 5.30836C14.6334 6.6167 15.25 7.68336 16.7584 7.68336C17.625 7.68336 18.3417 8.39169 18.3417 9.26669V10.7334C18.3417 11.6 17.6334 12.3167 16.7584 12.3167C15.25 12.3167 14.6334 13.3834 15.3917 14.6917C15.825 15.45 15.5667 16.4167 14.8084 16.85L13.3667 17.675C12.7084 18.0667 11.8584 17.8334 11.4667 17.175L11.375 17.0167C10.625 15.7084 9.39169 15.7084 8.63335 17.0167L8.54169 17.175C8.15002 17.8334 7.30002 18.0667 6.64169 17.675L5.20002 16.85C4.44169 16.4167 4.18335 15.4417 4.61669 14.6917C5.37502 13.3834 4.75835 12.3167 3.25002 12.3167C2.37502 12.3167 1.66669 11.6 1.66669 10.7334Z"
+                    stroke="#989898" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+        <a href="#panel6" class="asideTab5">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M16.9976 6.16C16.9376 6.15 16.8676 6.15 16.8076 6.16C15.4276 6.11 14.3276 4.98 14.3276 3.58C14.3276 2.15 15.4776 1 16.9076 1C18.3376 1 19.4876 2.16 19.4876 3.58C19.4776 4.98 18.3776 6.11 16.9976 6.16Z"
+                    stroke="#989898" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M15.9676 13.44C17.3376 13.67 18.8476 13.43 19.9076 12.72C21.3176 11.78 21.3176 10.24 19.9076 9.30004C18.8376 8.59004 17.3076 8.35003 15.9376 8.59003"
+                    stroke="#989898" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M4.96748 6.16C5.02748 6.15 5.09748 6.15 5.15748 6.16C6.53748 6.11 7.63748 4.98 7.63748 3.58C7.63748 2.15 6.48748 1 5.05748 1C3.62748 1 2.47748 2.16 2.47748 3.58C2.48748 4.98 3.58748 6.11 4.96748 6.16Z"
+                    stroke="#989898" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M5.9975 13.44C4.6275 13.67 3.1175 13.43 2.0575 12.72C0.6475 11.78 0.6475 10.24 2.0575 9.30004C3.1275 8.59004 4.6575 8.35003 6.0275 8.59003"
+                    stroke="#989898" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M10.9975 13.63C10.9375 13.62 10.8675 13.62 10.8075 13.63C9.42751 13.58 8.32751 12.45 8.32751 11.05C8.32751 9.61997 9.47751 8.46997 10.9075 8.46997C12.3375 8.46997 13.4875 9.62997 13.4875 11.05C13.4775 12.45 12.3775 13.59 10.9975 13.63Z"
+                    stroke="#989898" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M8.08753 16.78C6.67753 17.72 6.67753 19.26 8.08753 20.2C9.68753 21.27 12.3075 21.27 13.9075 20.2C15.3175 19.26 15.3175 17.72 13.9075 16.78C12.3175 15.72 9.68753 15.72 8.08753 16.78Z"
+                    stroke="#989898" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+        <a href="#panel7" class="asideTab6">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M14.1667 17.0834H5.83335C3.33335 17.0834 1.66669 15.8334 1.66669 12.9167V7.08335C1.66669 4.16669 3.33335 2.91669 5.83335 2.91669H14.1667C16.6667 2.91669 18.3334 4.16669 18.3334 7.08335V12.9167C18.3334 15.8334 16.6667 17.0834 14.1667 17.0834Z"
+                    stroke="#989898" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M14.1666 7.5L11.5583 9.58333C10.7 10.2667 9.29164 10.2667 8.43331 9.58333L5.83331 7.5"
+                    stroke="#989898" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+    </aside>
+
+    <main>
+        <div class="downloadModal" id="downloadReport">
+            <div class="ourServiceR">
+                <h4>Download Report</h4>
+                <div class="errBox"></div>
+                <form id="download-report">
+                    <div class="formInner">
+                        <div class="formInnerDiv position-relative">
+                            <label>Full Name <span>*</span> </label>
+                            <input type="text" name="name" required>
+                            <span class="errmsg"></span>
+                        </div>
+                        <div class="formInnerDiv position-relative">
+                            <label>Email <span>*</span> </label>
+                            <input type="email" name="email" required>
+                            <span class="errmsg"></span>
+                        </div>
+                        <div class="formInnerDiv position-relative">
+                            <label>Mobile Number <span>*</span> </label>
+                            <input type="tel" maxlength="10" minlength="10" max="10" min="10" name="phone"
+                                id="mobileNumber" required>
+                            <span class="errmsg"></span>
+                        </div>
+                        <div class="formInnerDiv position-relative">
+                            <label>Company (Optional) </label>
+                            <input type="text" name="company">
+                            <span class="errmsg"></span>
+                        </div>
+                        <div class="formInnerDiv position-relative">
+                            <label>Your Designation (Optional)</label>
+                            <input type="text" name="designation">
+                            <span class="errmsg"></span>
+                        </div>
+                        <div class="formInnerDiv position-relative">
+                            <label>How did you hear about us? (Optional)</label>
+                            <select name="source">
+                                <option value=""></option>
+                                <option value="Google">Google</option>
+                                <option value="Friend/Colleague">Friend/Colleague</option>
+                                <option value="Blog/Newspaper">Blog/Newspaper</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </div>
+                        <div class="formInnerDiv position-relative">
+                            <div class="g-recaptcha" id="rcaptcha"
+                                data-sitekey="6LdcE2AUAAAAAMwuDUrGibvtCqoh5KhwagUhyeQK"></div>
+                            <span id="captcha" style="color:red"></span>
+                        </div>
+                        <div class="formInnerDiv position-relative">
+                            <input type="hidden" name="report_id" id="reportHiddenId" value="">
+                        </div>
+                    </div>
+                    <button type="submit" class="w-100 mt-2">download</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- <div class="heroSectOnMob height100vh">
+            <img src="/images/load_img.png" alt="Rotating Image" class="rotateImageMob">
+            <img src="/images/hero.png" alt="Hero Image" class="HeroImageMob">
+            <div class="heroDataDiv">
+                <img src="/images/big_logo.svg" alt="big_logo">
+                p
+            </div>
+        </div> -->
+
+
+        <div id="panel1" class="heightFull hero_section position-relative panel active">
+            <div class="halfCircleCss"></div>
+            <img src="/images/load_img.png" alt="Rotating Image" class="rotateImage">
+            <img src="/images/hero.png" alt="Hero Image" class="HeroImage">
+            <div class="heroImageTwoDiv">
+                <img src="/images/hero2.png" alt="Hero Image" class="HeroImagetwo">
+                <span>A<br>N<br>A<br>L<br>Y<br>T<br>I<br>C<br>S</span>
+            </div>
+            <div class="logoDiv paralax">
+                <img src="/images/big_logo.svg" alt="big_logo">
+            </div>
+            <div class="imageAndParaForMobView">
+                <img src="/images/hero.png" alt="Hero Image">
+                <p>RAW @ CRE Matrix is the first and only consulting practice in India to harness the power of Data
+                    &
+                    Analytics and empower Developers and Investors unlock hidden value of their real estate. 
+                    Welcome to
+                    the era of data-centric decisions.</p>
+            </div>
+            <div class="descDiv">
+                <p>RAW @ CRE Matrix is the first and only consulting practice in India to <br> harness the power of Data
+                    &
+                    Analytics and empower Developers and <br> Investors unlock hidden value of their real estate. 
+                    Welcome to
+                    the era of <br> data-centric decisions.</p>
+            </div>
+            <div class="page1LastPart">
+                <p>India’s <span>Real Estate</span> is growing at an <br>
+                    unprecedented rate..</p>
+            </div>
+        </div>
+
+        <div id="panel2" class="heightFull work_section panel position-relative">
+            <div class="whatWeDoSection">
+                <div class="whatWeDoSectionOne position-relative">
+                    <div class="bigCircle"></div>
+                    <div class="orbit"></div>
+                    <h2>What We Do?</h2>
+                    <p>We provide data-driven decisions to enable developers, banks, investors and occupiers to <br>
+                        make
+                        the
+                        best use of their real estate through the following services​</p>
+                    <div class="orbit small"></div>
+                    <button id="goToSlider">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20">
+                            <path fill="currentColor" d="M7 1L5.6 2.5L13 10l-7.4 7.5L7 19l9-9z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="whatWeDoSectionTwo position-relative">
+                    <div class="glide workSectioGlide">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide">
+                                    <img src="/images/1.png" alt="Image">
+                                    <h3>Techno Economic Viability (TEV) Studies​</h3>
+                                    <p>Data insights around demand, supply, pricing etc. to evaluate risks of a project
+                                        to help developers, lender and investors gauge technological and market risks of
+                                        a project.</p>
+                                </li>
+                                <li class="glide__slide">
+                                    <img src="/images/2.png" alt="Image">
+                                    <h3>Go No-Go Study | To Build, Sell or Hold ?​</h3>
+                                    <p>Your land parcel is unique and it requires data and analysis of the catchment and
+                                        the city as a whole, to determine whether you should build now or later, or
+                                        maybe liquidate for better opportunities? Consider this, we’ll crunch at least a
+                                        million data points to answer your question, clubbed with decades of
+                                        experience​​</p>
+                                </li>
+                                <li class="glide__slide">
+                                    <img src="/images/3.png" alt="Image">
+                                    <h3>Feasibility 2.0 | What to Build Here ?​</h3>
+                                    <p>Historical data points towards residential development but oversupply in future
+                                        points at commercial possibilities. And then RAW team combines demographics to
+                                        suggest maybe Co-living should be the focus here. Possibilities are endless, it
+                                        is data that will guide us to your best decision.​​</p>
+                                </li>
+                                <li class="glide__slide">
+                                    <img src="/images/4.png" alt="Image">
+                                    <h3>Product Planning​</h3>
+                                    <p>Floor plates and unit sizes are being determined by what is selling / leasing in
+                                        the catchment, and RAW has it all. Amenities are evolving and so are parking
+                                        configurations. Is your project, to be delivered 3 years from now, in sync with
+                                        the demand that will arise at that time ?​​</p>
+                                </li>
+                                <li class="glide__slide">
+                                    <img src="/images/5.png" alt="Image">
+                                    <h3>Benchmarking​</h3>
+                                    <p>The best projects and developers are succeeding because of unit level economics –
+                                        unit sizes are in tune with demand. Brand mix in malls is no more confined to
+                                        which floor F&B should be at? We are answering which brand should be next to
+                                        each other to optimize Mall revenue. Say hello to Benchmarking 4.0​</p>
+                                </li>
+                                <li class="glide__slide">
+                                    <img src="/images/6.png" alt="Image">
+                                    <h3>Valuations – Precise, Authentic & Smart​</h3>
+                                    <p>The best projects and developers are succeeding because of unit level economics –
+                                        unit sizes are in tune with demand. Brand mix in malls is no more confined to
+                                        which floor F&B should be at? We are answering which brand should be next to
+                                        each other to optimize Mall revenue. Say hello to -Benchmarking 4.0​</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div data-glide-el="controls">
+                            <button class="slider__arrow slider__arrow--prev glide__arrow glide__arrow--prev"
+                                data-glide-dir="<">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20">
+                                    <path fill="black" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z" />
+                                </svg>
+                            </button>
+
+                            <button class="slider__arrow slider__arrow--next glide__arrow glide__arrow--next"
+                                data-glide-dir=">">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20">
+                                    <path fill="black" d="M7 1L5.6 2.5L13 10l-7.4 7.5L7 19l9-9z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="panel3" class="panel heightFull reports_section position-relative">
+            <p class="boxShadowCircle"></p>
+            <img src="/images/layer1.png" alt="bg" class="layer layer1">
+            <img src="/images/layer2.png" alt="bg" class="layer layer2">
+            <div class="reportsSectionMain">
+                <div class="reportsSectionL">
+                    <img src="/images/office.png" alt="office" class="active" id="dot1">
+                    <img src="/images/residential.png" alt="residential" id="dot2">
+                    <img src="/images/retail.png" alt="retail" id="dot3">
+                    <!-- <img src="/images/warehouse.png" alt="warehouse" id="dot4">
+                    <img src="/images/re.png" alt="re" id="dot5"> -->
+                </div>
+                <div class="reportsSectionR">
+                    <!-- Office Reports -->
+                    <div class="reportsSectionRInner active" data-panel="dot1">
+                        <h2>Office Reports</h2>
+                        <p>Our research teams prepare periodic analysis of demand, supply, pricing, vacancy and other
+                            key trends in office real estate to enable stakeholders take better decisions in a timely
+                            manner. Our approach combines a unique blend of on-ground experts, data sourced from
+                            authentic registered documents and statistical tools that help us gauge market momentum and
+                            predict upcoming demand and supply</p>
+                        <div class="btnGroup">
+                            <button class="myBtn">Know More</button>
+                            <button class="withNoBg">View Reports</button>
+                        </div>
+                    </div>
+                    <!-- Residential Reports -->
+                    <div class="reportsSectionRInner" data-panel="dot2">
+                        <h2>Residential Reports</h2>
+                        <p>Our residential insights provide developers, banks, investors, funds and brokers with
+                            analysis of key trends in the housing markets of India. Based on authentic data we combine
+                            macro-indicators along with sophisticated tools that crunch numbers to predict the next boom
+                            and analyze the industry cycles in each maro-market of India.</p>
+                        <div class="btnGroup">
+                            <button>Know More</button>
+                            <button class="withNoBg">View Reports</button>
+                        </div>
+                    </div>
+                    <!-- Retail Reports -->
+                    <div class="reportsSectionRInner" data-panel="dot3">
+                        <h2>Retail Reports</h2>
+                        <p>Our Retail team brings decades of experience which when combined with our core data helps us
+                            carve out retail reports that bust myths and provide key insights into mall and high street
+                            leasing and sale trends. We combine consumer sentiments along with macro-economic data to
+                            predict where the next retail hotspot will be along with cutting edge insights that dive
+                            into brand categories, floor-wise rentals and space categories.</p>
+                        <div class="btnGroup">
+                            <button>Know More</button>
+                            <button class="withNoBg">View Reports</button>
+                        </div>
+                    </div>
+                    <!-- Warehousing Reports -->
+                    <!-- <div class="reportsSectionRInner" data-panel="dot4">
+                        <h2>Warehousing Reports</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore</p>
+                        <div class="btnGroup">
+                            <button>Know More</button>
+                            <button class="withNoBg">View Reports</button>
+                        </div>
+                    </div> -->
+                    <!-- RE Loans -->
+                    <!-- <div class="reportsSectionRInner" data-panel="dot5">
+                        <h2>RE Loans</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore</p>
+                        <div class="btnGroup">
+                            <button>Know More</button>
+                            <button class="withNoBg">View Reports</button>
+                        </div>
+                    </div> -->
+                    <ul class="navDots">
+                        <li class="active" rel="dot1"></li>
+                        <li rel="dot2"></li>
+                        <li rel="dot3"></li>
+                        <!-- <li rel="dot4"></li>
+                        <li rel="dot5"></li> -->
+                    </ul>
+
+                </div>
+            </div>
+            <div class="heightFull viewReportsSection">
+                <div class="viewReportsSectionMain">
+                    <div class="viewReportsSectionL">
+                        <ul>
+                            <li rel="report1" data-val="1" class="active">Office Reports</li>
+                            <li rel="report2" data-val="2">Residential Reports</li>
+                            <li rel="report3" data-val="3">Retail Reports</li>
+                            <li rel="report4" data-val="4">Warehouse Reports</li>
+                            <li rel="report5" data-val="5">RE Loans</li>
+                        </ul>
+                    </div>
+                    <div class="viewReportsSectionR position-relative">
+                        <div class="viewReportsModalOne">
+                            <span id="goBackToReport">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20">
+                                    <path fill="#000" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z" />
+                                </svg>
+                            </span>
+                            <div class="viewReportsSectionRMain"></div>
+                            <ul class="pagination"></ul>
+                        </div>
+                        <div class="viewReportsModalTwo">
+                            <span id="goBackToReportMain">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20">
+                                    <path fill="#000" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z" />
+                                </svg>
+                            </span>
+                            <div class="viewReportsSectionRModal">
+                                <div class="viewReportsSectionRModalL">
+                                    <img src="" alt="">
+                                    <h2>Report Name</h2>
+                                    <h3>Date Published</h3>
+                                    <a href="#">Download</a>
+                                </div>
+                                <div class="viewReportsSectionRModalR">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                        irure
+                                        dolor in reprehenderit in voluptate velit esse cillum doloreLorem ipsum dolor
+                                        sit
+                                        amet,
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore
+                                        magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                        ut
+                                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                        voluptate
+                                        velit esse cillum doloreLorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed
+                                        do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat.
+                                        Duis
+                                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                        irure
+                                        dolor in reprehenderit in voluptate velit esse cillum doloreLorem ipsum dolor
+                                        sit
+                                        amet,
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore
+                                        magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                        ut
+                                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                        voluptate
+                                        velit esse cillum doloreLorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed
+                                        do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat.
+                                        Duis
+                                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+
+                                        dolor in reprehenderit in voluptate velit esse cillum doloreLorem ipsum dolor
+                                        sit
+                                        amet,
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore
+                                        magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                        ut
+                                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                        voluptate
+                                        velit esse cillum dolore
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="panel5" class="panel heightFull ourServiceSection">
+            <div class="ourServiceMain">
+                <div class="ourServiceL">
+                    <div class="w3-bar w3-black">
+                        <button rel="serv1" class="w3-bar-item w3-button active">Developers</button>
+                        <button rel="serv2" class="w3-bar-item w3-button">Investors</button>
+                        <button rel="serv3" class="w3-bar-item w3-button">Occupier</button>
+                    </div>
+                    <div class="serviceContentMain">
+                        <div id="serv1" class="serviceContent active">
+                            <div data-id="ValuationsDeveloper" class="developerTabcontent active">
+                                <h2>Valuations</h2>
+                                <p>CRE Matrix RAW Valuations is the only valuation practise in India that uses authentic
+                                    registered data to bring transparent and accurate valuations of Real Estate to all
+                                    stakeholders. Using a repository of more than 2 Cr. Registered deals across Tier-I,
+                                    II, III of India, combined with local market knowledge using our extensive network
+                                    of consultants along with a team of in-house analysts in every city – we ensure
+                                    valuations are accurate and reflect actual market scenario. Across all segments,
+                                    land and building – whether it is housing, office, retail, industrial or warehousing
+                                    – CRE Matrix RAW valuation professionals have significant experience in execution of
+                                    valuation assignments.</p>
+                                <p>Our team is the right mix of Civil Engineers, Data Scientists, MBAs, Chartered
+                                    Financial Analysts that allow us to ensure every valuation report is in sync with
+                                    the latest methodologies, captures all aspects of a project and the region and
+                                    crunches tonnes of data to arrive at the range which justifies the existing market
+                                    conditions.</p>
+                            </div>
+
+                            <div data-id="FeasibilityDeveloper" class="developerTabcontent">
+                                <h2>Feasibility Study</h2>
+                                <p>Your land parcel is waiting to host the next best project in your city. Should the
+                                    project be an office project, retail mall or high street, a housing project, a
+                                    co-living asset or even a warehouse? CRE Matrix RAW assesses the viability of a
+                                    project prior to the formal planning process using data as a core along with our
+                                    in-depth field research to clearly understand where the market is moving towards.
+                                    Our data sets take advantage of real estate transactions and also unique data sets
+                                    which go beyond real estate to understand the demographics, income and ethnicity
+                                    patterns in a particular locality. Our unique approach of using unorthodox data sets
+                                    to find correlations with sales have made us the most preferred feasibility study
+                                    partner for developers across India.</p>
+                            </div>
+
+                            <div data-id="HBUDeveloper" class="developerTabcontent">
+                                <h2>Highest & Best Use Study</h2>
+                                <p>We study the local real estate market, including supply and demand factors, to
+                                    determine the most profitable use for the property. Our approach start from analysis
+                                    of the subject site - evaluating the physical characteristics of the property,
+                                    including size, location, zoning, and topography, to determine its suitability for
+                                    different uses. We then move on to financial analysis to gauge the financial
+                                    performance of different uses, including estimated revenue, expenses, and
+                                    profitability. Our Legal and Regulatory Analysis covers any legal or regulatory
+                                    constraints that may affect the property, including zoning laws, environmental
+                                    regulations, and historical preservation restrictions.</p>
+                                <p>We have developed internal models that crunch tonnes of data so that the CRE RAW HBU
+                                    produces the highest value for a property based on the concept of maximum
+                                    productivity by determining the most optimum type of the property that can be
+                                    developed and that would result in the highest market value of the property.</p>
+                            </div>
+
+                            <div data-id="PredictiveDeveloper" class="developerTabcontent">
+                                <h2>Predictive Analytics</h2>
+                                <p>How many housing units will your city sell in the next 2-5 years? What will the
+                                    office rental be 4 years from now when your asset will be ready for leasing? What
+                                    would be the demand for office spaces after 5 years in a particular micro-market?
+                                    You are coming up with a new mall in Ludhiana in 4 years from now – what should be
+                                    the Brand Mix basis the consumption patterns of consumers at that time? CRE Matrix
+                                    RAW is the only team in India capable to use authentic data points and predict with
+                                    the highest probability the trends that we are about to see. Our models have been
+                                    back-tested with data and fine-tuned using the most sophisticated statistical
+                                    methods.</p>
+                            </div>
+
+                            <div data-id="ProductDeveloper" class="developerTabcontent">
+                                <h2>Product Planning</h2>
+                                <p>You are coming up with a residential development on a land parcel. Can all the
+                                    transactions over the last 5-10 years help you understand how many 2-BHKs you should
+                                    build in order to maximize the business potential of the project? What sizes of
+                                    3-BHK are being sold the most? How is the best performing project configuring their
+                                    product strategy? What floor plates are being built by the most successful
+                                    commercial developers? What is the most popular size of office being taken up by
+                                    occupiers in an area? How are the amenities you are planning in your project
+                                    comparing with other benchmark projects in your region? RAW’s product planning
+                                    models help developers optimize their product strategy, keeping in mind the
+                                    constraints of their goals and objectives.</p>
+                            </div>
+
+                            <div data-id="FinancialDeveloper" class="developerTabcontent">
+                                <h2>Financial Feasibility</h2>
+                                <p>Most financial analysis relies on hypothetical numbers which are based on past
+                                    experience. CRE RAW augments the hypothetical numbers with actual financials of
+                                    comparative benchmark assets and companies to costs associated with the development,
+                                    including land acquisition, construction, marketing, and ongoing maintenance. We
+                                    also analyse projecting potential revenue streams, including sales or leasing
+                                    income, and analysing the return on investment.</p>
+                            </div>
+
+                            <div data-id="MacroDeveloper" class="developerTabcontent">
+                                <h2>Macro-market Research</h2>
+                                <p>Our team of RAW Research analysts are adept in studying the latest realty trends in
+                                    India. We deploy a comprehensive approach that begins with demographics and ends
+                                    with estimation of demand and supply for a service or a product in the region. If
+                                    you are planning a co-living project or an in-city warehousing project in a
+                                    locality, it is critical to understand the demand potential and the current gap in
+                                    the market. We combine our transaction level research along with secondary and
+                                    primary research to deliver cutting edge insights to stakeholders in the
+                                    micro-market.</p>
+                            </div>
+
+                            <div data-id="TEVDeveloper" class="developerTabcontent">
+                                <h2>TEV Study</h2>
+                                <p>RAW TEV study measure market risk, regulatory risk and financial risk of a project.
+                                    Techno Economic Viability (TEV) study of a project consists of evaluation of a
+                                    project from a technical and financial standpoint, with relevant data about its
+                                    technological feasibility and economic viability, into one or a few criteria on the
+                                    basis of which the project is recommended for selection, modification or rejection.
+                                </p>
+                                <p>Lenders use CRE RAW Techno-Economic Viability (TEV) Study to take decide the
+                                    acceptability of the degree of risk involved in a project. We take into account
+                                    technological risk, market risk, regulatory risk, financial risk, etc. to arrive at
+                                    a risk score for the project under analysis.</p>
+                            </div>
+
+                            <div data-id="SiteDeveloper" class="developerTabcontent">
+                                <h2>Site Selection & Location Strategy</h2>
+                                <p>A developer with pan-India presence wanted to understand what are the top 10
+                                    locations to invest in to develop an affordable housing project. A developer from
+                                    Bengaluru wanted to shortlist localities in North India to develop their next
+                                    warehousing project. At CRE RAW, our analysts face these questions everyday and
+                                    provide cutting edge analysis using a combination of sophisticated data-cantered
+                                    models and qualitative analysis. We also deploy data sets beyond Real Estate to
+                                    determine the impact of other factors in a region.</p>
+                            </div>
+
+                            <div data-id="StrategicDeveloper" class="developerTabcontent">
+                                <h2>Strategic Planning for Growth</h2>
+                                <p>A large developer in Pune wanted to prepare a 5-year strategic plan with an aim to
+                                    increase their market share from 5% to 12% in a prominent city of India. CRE RAW
+                                    team prepared a strategic growth plan for the Company taking into account the goals
+                                    / objectives and constraints of the company along with in-depth analysis of the
+                                    competitors. Our team also went beyond to analyze key existing and upcoming markets
+                                    along with new segments which the developer could tap into as a strategic measure to
+                                    compete with pan India developers.</p>
+                            </div>
+
+
+                            <div class="serviceContentLists">
+                                <h4>Other Developer Services</h4>
+                                <ul>
+                                    <li onclick="openTabDeveloper('ValuationsDeveloper')">Valuations</li>
+                                    <li onclick="openTabDeveloper('FeasibilityDeveloper')">Feasibility Study</li>
+                                    <li onclick="openTabDeveloper('HBUDeveloper')">Highest & Best Use Study</li>
+                                    <li onclick="openTabDeveloper('PredictiveDeveloper')">Predictive Analytics</li>
+                                    <li onclick="openTabDeveloper('ProductDeveloper')">Product Planning</li>
+                                    <li onclick="openTabDeveloper('FinancialDeveloper')">Financial Feasibility</li>
+                                    <li onclick="openTabDeveloper('MacroDeveloper')">Macro-market Research</li>
+                                    <li onclick="openTabDeveloper('TEVDeveloper')">TEV Study</li>
+                                    <li onclick="openTabDeveloper('SiteDeveloper')">Site Selection & Location Strategy
+                                    </li>
+                                    <li onclick="openTabDeveloper('StrategicDeveloper')">Strategic Planning for Growth
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="serv2" class="serviceContent">
+                            <div data-id="InvestmentAdvisoryInvestor" class="investorTabcontent active">
+                                <h2>Investment Advisory</h2>
+                                <p>Large real estate funds are using RAW to understand which city should be on top of
+                                    their investment strategy. Within a city, which segment of real estate they should
+                                    look at. Identification of potential assets for investments involves due diligence
+                                    at a level which only CRE Matrix can provide as we have the complete set of
+                                    agreements of all transactions of each asset in India. Our research for investors
+                                    determines which markets are skewed towards landlords taking into consideration
+                                    demand, supply, pricing and vacancy of the region. </p>
+                            </div>
+
+                            <div data-id="ValuationsInvestor" class="investorTabcontent">
+                                <h2>Valuations </h2>
+                                <p>CRE Matrix RAW Valuations is the only valuation practise in India that uses authentic
+                                    registered data to bring transparent and accurate valuations of Real Estate to all
+                                    stakeholders. Using a repository of more than 2 Cr. Registered deals across Tier-I,
+                                    II, III of India, combined with local market knowledge using our extensive network
+                                    of consultants along with a team of in-house analysts in every city – we ensure
+                                    valuations are accurate and reflect actual market scenario. Across all segments,
+                                    land and building – whether it is housing, office, retail, industrial or warehousing
+                                    – CRE Matrix RAW valuation professionals have significant experience in execution of
+                                    valuation assignments.
+                                </p>
+                                <p>Our team is the right mix of Civil Engineers, Data Scientists, MBAs, Chartered
+                                    Financial Analysts that allow us to ensure every valuation report is in sync with
+                                    the latest methodologies, captures all aspects of a project and the region and
+                                    crunches tonnes of data to arrive at the range which justifies the existing market
+                                    conditions.</p>
+                            </div>
+
+                            <div data-id="FeasibilityInvestor" class="investorTabcontent">
+                                <h2>Feasibility Study</h2>
+                                <p>Your land parcel is waiting to host the next best project in your city. Should the
+                                    project be an office project, retail mall or high street, a housing project, a
+                                    co-living asset or even a warehouse? CRE Matrix RAW assesses the viability of a
+                                    project prior to the formal planning process using data as a core along with our
+                                    in-depth field research to clearly understand where the market is moving towards.
+                                    Our data sets take advantage of real estate transactions and also unique data sets
+                                    which go beyond real estate to understand the demographics, income and ethnicity
+                                    patterns in a particular locality. Our unique approach of using unorthodox data sets
+                                    to find correlations with sales have made us the most preferred feasibility study
+                                    partner for developers across India.</p>
+                            </div>
+                            <div data-id="PredictiveInvestor" class="investorTabcontent">
+                                <h2>Predictive Analytics</h2>
+                                <p>How many housing units will your city sell in the next 2-5 years? What will the
+                                    office rental be 4 years from now when your asset will be ready for leasing? What
+                                    would be the demand for office spaces after 5 years in a particular micro-market?
+                                    You are coming up with a new mall in Ludhiana in 4 years from now – what should be
+                                    the Brand Mix basis the consumption patterns of consumers at that time? CRE Matrix
+                                    RAW is the only team in India capable to use authentic data points and predict with
+                                    the highest probability the trends that we are about to see. Our models have been
+                                    back-tested with data and fine-tuned using the most sophisticated statistical
+                                    methods. </p>
+                            </div>
+                            <div data-id="MacroInvestor" class="investorTabcontent">
+                                <h2>Macro-market Research</h2>
+                                <p>Our team of RAW Research analysts are adept in studying the latest realty trends in
+                                    India. We deploy a comprehensive approach that begins with demographics and ends
+                                    with estimation of demand and supply for a service or a product in the region. If
+                                    you are planning a co-living project or an in-city warehousing project in a
+                                    locality, it is critical to understand the demand potential and the current gap in
+                                    the market. We combine our transaction level research along with secondary and
+                                    primary research to deliver cutting edge insights to stakeholders in the
+                                    micro-market. </p>
+                            </div>
+
+                            <div class="serviceContentLists">
+                                <h4>Other Investor Services</h4>
+                                <ul>
+                                    <li onclick="openTabInvestor('InvestmentAdvisoryInvestor')">Investment Advisory</li>
+                                    <li onclick="openTabInvestor('ValuationsInvestor')">Valuations</li>
+                                    <li onclick="openTabInvestor('FeasibilityInvestor')">Feasibility Study</li>
+                                    <li onclick="openTabInvestor('PredictiveInvestor')">Predictive Analytics</li>
+                                    <li onclick="openTabInvestor('MacroInvestor')">Macro-market Research</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="serv3" class="serviceContent">
+                            <div data-id="RentalBenchmarkingOccupier" class="occupierTabcontent active">
+                                <h2>Rental Benchmarking</h2>
+                                <p>An occupier’s must-have tool for their next renewal or expansion. RAW advises
+                                    retailers and large Banks across India to optimize rentals using a combination of
+                                    authentic transactions, local market insights and predictive analytics. We have
+                                    advised occupiers in F&B, 3PL, Banking, Apparel etc. wherein the occupiers have
+                                    saved massive rentals as they use CRE RAW Rental Benchmarking reports to ensure a
+                                    level playing field. The service is available for office, retail and industrial
+                                    premises, shopping centres and residential dwellings. We use a sophisticated model
+                                    which crunches tonnes of data, including that of the subject and neighbourhood
+                                    assets to arrive at a fair rental range.</p>
+                            </div>
+                            <div data-id="LocationStrategyOccupier" class="occupierTabcontent">
+                                <h2>Location Strategy</h2>
+                                <p>A data driven decision to decide where should you open your next office, branch,
+                                    outlet not only ensures a sound top-line but also optimizes the costs involved in
+                                    such expansion plans. Our data sets are advising large occupiers on specific
+                                    localities and assets where they can move to using not only our commercial data
+                                    prowess but also our retail and byond-RE data which takes into account environmental
+                                    and safety issues. A Bank wanted to open a branch in Vasant Vihar, Delhi – but our
+                                    datasets advised an adjacent locality where footfalls were better, rentals were
+                                    relatively lower and relatively low AQI levels ensured a perfect blend for a new
+                                    branch. </p>
+                            </div>
+                            <div class="serviceContentLists">
+                                <h4>Other Occupier Services</h4>
+                                <ul>
+                                    <li onclick="openTabOccupier('RentalBenchmarkingOccupier')">Rental Benchmarking</li>
+                                    <li onclick="openTabOccupier('LocationStrategyOccupier')">Location Strategy</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ourServiceR">
+                    <h4>How Can We Help You?</h4>
+                    <form id="myForm2">
+                        <div class="formInner">
+                            <div class="formInnerDiv position-relative">
+                                <label>Full Name <span>*</span> </label>
+                                <input type="text" name="full_name">
+                                <span class="errmsg"></span>
+                            </div>
+                            <div class="formInnerDiv position-relative">
+                                <label>Email <span>*</span> </label>
+                                <input type="email" name="email">
+                                <span class="errmsg"></span>
+                            </div>
+                            <div class="formInnerDiv position-relative">
+                                <label>Mobile Number <span>*</span> </label>
+                                <input type="number" name="phone" id="mobileNumber">
+                                <span class="errmsg"></span>
+                            </div>
+                            <div class="formInnerDiv position-relative">
+                                <label>Company <span>*</span> </label>
+                                <input type="text" name="company">
+                                <span class="errmsg"></span>
+                            </div>
+                            <div class="formInnerDiv position-relative">
+                                <label>Message <span>*</span> </label>
+                                <textarea name="message" class="w-100"></textarea>
+                                <span class="errmsg"></span>
+                            </div>
+                            <button type="submit" class="w-100 mt-2">SEND</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="panel6" class="heightFull position-relative panel ourTeamSection">
+            <img src="/images/load_img.png" alt="Rotating Image" class="rotateImage">
+            <h3 class="ourTeamText">
+                <img src="/images/teamtext.svg" alt="OUR TEAM">
+            </h3>
+            <div class="ourTeamSlider">
+                <div class="ourTeamSliderInner">
+                    <img src="/images/team/1.png" alt="">
+                    <h2>Abhishek Kiran Gupta</h2>
+                    <p>Co-founder & CEO</p>
+                </div>
+            </div>
+            <button class="team prev-team">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20">
+                    <path fill="#e5e5e5" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z" />
+                </svg>
+            </button>
+            <button class="team next-team">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20">
+                    <path fill="#e5e5e5" d="M7 1L5.6 2.5L13 10l-7.4 7.5L7 19l9-9z" />
+                </svg>
+            </button>
+        </div>
+
+        <div id="panel7" class="heightFull panel reactUsSection">
+            <div class="ourServiceMain position-relative">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <div class="ourServiceL">
+                    <div class="officeDetails">
+                        <div class="officeDetailsInner">
+                            <span>Address</span>
+                            <p><strong>Mumbai</strong> <br> 1203, 12th Floor, Lodha Supremus, Saki Vihar Rd, Powai,
+                                Mumbai, Maharashtra 400072</p>
+                            <br>
+                            <p><strong>Delhi</strong> <br> 3rd Floor, 416, Spaced Out Co-working, Shahpur Jat, New Delhi
+                                - 110049</p>
+                        </div>
+                        <div class="officeDetailsInner myaxis">
+                            <span>Email</span>
+                            <br>
+                            <a href="mailto:business@crematrix.com">business@crematrix.com</a>
+                        </div>
+                        <div class="officeDetailsInner">
+                            <span>Contact Number</span>
+                            <br>
+                            <a href="mailto:+91 98103 99316">+91 98103 99316</a>
+                        </div>
+
+                        <div class="socialIcons">
+                            <a href="https://www.facebook.com/CREMatrixIndia" target="_blank">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15 0C12.0333 0 9.13319 0.879735 6.66645 2.52796C4.19972 4.17618 2.27713 6.51886 1.14181 9.25975C0.00649923 12.0006 -0.290551 15.0166 0.288228 17.9264C0.867006 20.8361 2.29562 23.5088 4.3934 25.6066C6.49119 27.7044 9.16394 29.133 12.0737 29.7118C14.9834 30.2906 17.9994 29.9935 20.7403 28.8582C23.4811 27.7229 25.8238 25.8003 27.4721 23.3336C29.1203 20.8668 30 17.9667 30 15C30 11.0218 28.4197 7.20644 25.6066 4.3934C22.7936 1.58035 18.9783 0 15 0ZM18.8013 13.5789L18.5526 15.6691C18.5419 15.7661 18.4956 15.8557 18.4227 15.9205C18.3498 15.9854 18.2555 16.021 18.1579 16.0204H15.9868V22.2178C15.9874 22.2918 15.9586 22.363 15.9069 22.4158C15.8551 22.4687 15.7845 22.499 15.7105 22.5H13.5C13.4632 22.4995 13.4269 22.4917 13.3931 22.4772C13.3592 22.4626 13.3286 22.4415 13.303 22.4151C13.2773 22.3887 13.2571 22.3576 13.2435 22.3233C13.2299 22.2891 13.2232 22.2526 13.2237 22.2158L13.2355 16.0204H11.5915C11.4868 16.0204 11.3864 15.9788 11.3123 15.9048C11.2383 15.8308 11.1967 15.7303 11.1967 15.6257V13.5375C11.1967 13.4328 11.2383 13.3324 11.3123 13.2584C11.3864 13.1844 11.4868 13.1428 11.5915 13.1428H13.2237V11.1178C13.2237 8.775 14.6191 7.5 16.6579 7.5H18.3296C18.4343 7.5 18.5347 7.54159 18.6087 7.61562C18.6828 7.68964 18.7243 7.79005 18.7243 7.89474V9.65329C18.7243 9.75798 18.6828 9.85838 18.6087 9.93241C18.5347 10.0064 18.4343 10.048 18.3296 10.048H17.3053C16.1961 10.0658 15.9868 10.5967 15.9868 11.3901V13.1368H18.4184C18.4735 13.1381 18.5277 13.1509 18.5775 13.1743C18.6274 13.1978 18.6718 13.2314 18.7078 13.2731C18.7439 13.3147 18.7709 13.3634 18.787 13.4161C18.8031 13.4688 18.8079 13.5243 18.8013 13.5789Z"
+                                        fill="#E5E5E5" />
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/cre_matrix/" target="_blank">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15 17.3704C16.3092 17.3704 17.3704 16.3092 17.3704 15C17.3704 13.6909 16.3092 12.6296 15 12.6296C13.6909 12.6296 12.6296 13.6909 12.6296 15C12.6296 16.3092 13.6909 17.3704 15 17.3704Z"
+                                        fill="#E5E5E5" />
+                                    <path
+                                        d="M18.0316 9.00977H11.9685C11.1833 9.00977 10.4303 9.32168 9.87505 9.87688C9.31985 10.4321 9.00793 11.1851 9.00793 11.9703V18.0315C9.00793 18.8167 9.31985 19.5697 9.87505 20.1249C10.4303 20.6801 11.1833 20.992 11.9685 20.992H18.0316C18.8168 20.992 19.5698 20.6801 20.125 20.1249C20.6802 19.5697 20.9921 18.8167 20.9921 18.0315V11.9683C20.9916 11.1835 20.6795 10.431 20.1243 9.87619C19.5692 9.32141 18.8165 9.00977 18.0316 9.00977ZM15 18.8802C14.2325 18.8806 13.4821 18.6533 12.8437 18.2272C12.2054 17.801 11.7077 17.1952 11.4137 16.4862C11.1197 15.7772 11.0426 14.9969 11.1921 14.2441C11.3416 13.4913 11.711 12.7997 12.2536 12.2568C12.7962 11.714 13.4876 11.3442 14.2403 11.1943C14.9931 11.0445 15.7734 11.1212 16.4825 11.4148C17.1917 11.7084 17.7978 12.2058 18.2243 12.8439C18.6507 13.4821 18.8783 14.2324 18.8783 14.9999C18.8773 16.0283 18.4684 17.0144 17.7414 17.7418C17.0143 18.4692 16.0285 18.8786 15 18.8802ZM18.902 12.0788C18.7121 12.0792 18.5264 12.0233 18.3684 11.918C18.2103 11.8128 18.0871 11.663 18.0142 11.4876C17.9414 11.3123 17.9222 11.1192 17.9592 10.933C17.9961 10.7467 18.0875 10.5756 18.2218 10.4414C18.356 10.3071 18.5271 10.2157 18.7134 10.1788C18.8996 10.1418 19.0927 10.161 19.268 10.2338C19.4434 10.3067 19.5932 10.4299 19.6984 10.588C19.8037 10.746 19.8596 10.9317 19.8593 11.1216C19.8587 11.3753 19.7577 11.6185 19.5783 11.7979C19.3989 11.9773 19.1557 12.0783 18.902 12.0788Z"
+                                        fill="#E5E5E5" />
+                                    <path
+                                        d="M15 0C12.0333 0 9.13319 0.879735 6.66645 2.52796C4.19972 4.17618 2.27713 6.51886 1.14181 9.25975C0.00649923 12.0006 -0.290551 15.0166 0.288228 17.9264C0.867006 20.8361 2.29562 23.5088 4.3934 25.6066C6.49119 27.7044 9.16394 29.133 12.0737 29.7118C14.9834 30.2906 17.9994 29.9935 20.7403 28.8582C23.4811 27.7229 25.8238 25.8003 27.4721 23.3336C29.1203 20.8668 30 17.9667 30 15C30 11.0218 28.4197 7.20644 25.6066 4.3934C22.7936 1.58035 18.9783 0 15 0ZM22.5 18.0316C22.499 19.2164 22.0278 20.3523 21.1901 21.1901C20.3523 22.0278 19.2164 22.499 18.0316 22.5H11.9684C10.7838 22.4984 9.64816 22.0272 8.81051 21.1895C7.97286 20.3518 7.50157 19.2162 7.50001 18.0316V11.9684C7.50157 10.7838 7.97286 9.64815 8.81051 8.8105C9.64816 7.97285 10.7838 7.50157 11.9684 7.5H18.0316C19.2162 7.50157 20.3519 7.97285 21.1895 8.8105C22.0272 9.64815 22.4984 10.7838 22.5 11.9684V18.0316Z"
+                                        fill="#E5E5E5" />
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/company/cre-matrix" target="_blank">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15 0C12.0333 0 9.13319 0.879735 6.66645 2.52796C4.19972 4.17618 2.27713 6.51886 1.14181 9.25975C0.00649923 12.0006 -0.290551 15.0166 0.288228 17.9264C0.867006 20.8361 2.29562 23.5088 4.3934 25.6066C6.49119 27.7044 9.16394 29.133 12.0737 29.7118C14.9834 30.2906 17.9994 29.9935 20.7403 28.8582C23.4811 27.7229 25.8238 25.8003 27.4721 23.3336C29.1203 20.8668 30 17.9667 30 15C30 11.0218 28.4197 7.20644 25.6066 4.3934C22.7936 1.58035 18.9783 0 15 0ZM11.1829 21.9928C11.1829 22.1273 11.1295 22.2563 11.0343 22.3514C10.9392 22.4466 10.8102 22.5 10.6757 22.5H8.5204C8.45372 22.5003 8.38764 22.4873 8.32598 22.4619C8.26432 22.4365 8.2083 22.3992 8.16115 22.352C8.114 22.3049 8.07664 22.2488 8.05124 22.1872C8.02585 22.1255 8.0129 22.0595 8.01316 21.9928V12.9553C8.01316 12.8207 8.06661 12.6917 8.16173 12.5966C8.25686 12.5015 8.38587 12.448 8.5204 12.448H10.6757C10.8102 12.448 10.9392 12.5015 11.0343 12.5966C11.1295 12.6917 11.1829 12.8207 11.1829 12.9553V21.9928ZM9.60395 11.5974C9.19851 11.5989 8.80173 11.4802 8.46383 11.2561C8.12593 11.032 7.86212 10.7127 7.70579 10.3386C7.54946 9.96453 7.50765 9.55246 7.58564 9.15459C7.66364 8.75672 7.85793 8.39094 8.14393 8.10356C8.42993 7.81618 8.79477 7.62012 9.19226 7.54021C9.58975 7.46029 10.002 7.50012 10.3769 7.65464C10.7517 7.80916 11.0723 8.07143 11.298 8.40825C11.5237 8.74506 11.6444 9.14127 11.6447 9.54671C11.645 9.81575 11.5923 10.0822 11.4896 10.3309C11.3868 10.5795 11.2361 10.8055 11.0461 10.9959C10.856 11.1863 10.6303 11.3375 10.3819 11.4407C10.1334 11.5439 9.86707 11.5971 9.59803 11.5974H9.60395ZM22.4566 22.0342C22.4566 22.1577 22.4075 22.2762 22.3202 22.3636C22.2328 22.4509 22.1143 22.5 21.9908 22.5H19.6717C19.5482 22.5 19.4297 22.4509 19.3424 22.3636C19.255 22.2762 19.2059 22.1577 19.2059 22.0342V17.7947C19.2059 17.1612 19.3895 15.0316 17.552 15.0316C16.127 15.0316 15.8368 16.4961 15.7757 17.1533V22.0441C15.7731 22.1652 15.7234 22.2806 15.6372 22.3657C15.551 22.4508 15.435 22.499 15.3138 22.5H13.0757C13.0144 22.5003 12.9537 22.4884 12.8971 22.4651C12.8405 22.4418 12.789 22.4075 12.7457 22.3642C12.7024 22.3209 12.6681 22.2694 12.6448 22.2128C12.6215 22.1561 12.6096 22.0955 12.6099 22.0342V12.9158C12.6096 12.8545 12.6215 12.7937 12.6448 12.7369C12.6681 12.6802 12.7023 12.6286 12.7456 12.5852C12.7889 12.5417 12.8403 12.5072 12.897 12.4837C12.9536 12.4601 13.0143 12.448 13.0757 12.448H15.3138C15.3759 12.447 15.4376 12.4583 15.4953 12.4813C15.5529 12.5044 15.6054 12.5387 15.6497 12.5822C15.694 12.6258 15.7291 12.6777 15.7531 12.7349C15.7771 12.7922 15.7895 12.8537 15.7895 12.9158V13.7053C16.3184 12.9158 17.104 12.298 18.7757 12.298C22.4822 12.298 22.4605 15.7599 22.4605 17.6605L22.4566 22.0342Z"
+                                        fill="#E5E5E5" />
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/crematrix" target="_blank">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M28.8212 20.8388C29.5802 19.0442 30 17.071 30 15.0001H29.9998C29.9998 6.71571 23.284 0 14.9999 0C8.78662 0 3.45582 3.77768 1.17882 9.16142C0.419824 10.956 0 12.9292 0 15.0001C0 23.2843 6.71571 30 15.0001 30.0002C21.2131 30.0002 26.5439 26.2226 28.8212 20.8388ZM16.5941 13.9819V13.9821L22.8677 23.0772H18.1734L14.0234 17.0057L14.0233 17.0056L8.86158 23.077H7.40469L13.3794 16.0633L7.13207 6.92327H11.7251L15.9489 13.0467L15.949 13.0469L15.9491 13.0467L21.1656 6.92302H22.5956L16.5941 13.9819ZM18.713 22.0543L14.7101 16.1979L14.7102 16.1977L14.7104 16.1975L14.067 15.2562L14.0668 15.2563L14.0667 15.2562L9.07014 7.94623H11.1881L15.2624 13.8527L15.9078 14.7888L20.9192 22.0543H18.713Z"
+                                        fill="#E5E5E5" />
+                                </svg>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCm_hB9FN-hLtDCsC5D41FFg" target="_blank">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.2059 12.1262L17.8855 14.9999L13.2059 17.8756V12.1262Z"
+                                        fill="#E5E5E5" />
+                                    <path
+                                        d="M15 0C12.0333 0 9.13319 0.879735 6.66645 2.52796C4.19972 4.17618 2.27713 6.51886 1.14181 9.25975C0.00649923 12.0006 -0.290551 15.0166 0.288228 17.9264C0.867006 20.8361 2.29562 23.5088 4.3934 25.6066C6.49119 27.7044 9.16394 29.133 12.0737 29.7118C14.9834 30.2906 17.9994 29.9935 20.7403 28.8582C23.4811 27.7229 25.8238 25.8003 27.4721 23.3336C29.1203 20.8668 30 17.9667 30 15C30 11.0218 28.4197 7.20644 25.6066 4.3934C22.7936 1.58035 18.9783 0 15 0ZM22.1487 18.6099C21.8487 19.5316 20.8559 20.0921 19.9421 20.2204C16.6566 20.5697 13.3434 20.5697 10.0579 20.2204C9.14409 20.0921 8.15132 19.5316 7.85132 18.6099C7.38357 16.2267 7.38357 13.7753 7.85132 11.3921C8.15132 10.4605 9.14409 9.90987 10.0658 9.78158C13.3513 9.43223 16.6645 9.43223 19.95 9.78158C20.8638 9.90987 21.8566 10.4684 22.1566 11.3921C22.6217 13.7758 22.619 16.2272 22.1487 18.6099Z"
+                                        fill="#E5E5E5" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ourServiceR">
+                    <h4>How Can We Help You?</h4>
+                    <form id="myForm2">
+                        <div class="formInner">
+                            <div class="formInnerDiv position-relative">
+                                <label>Full Name <span>*</span> </label>
+                                <input type="text" name="full_name">
+                                <span class="errmsg"></span>
+                            </div>
+                            <div class="formInnerDiv position-relative">
+                                <label>Email <span>*</span> </label>
+                                <input type="email" name="email">
+                                <span class="errmsg"></span>
+                            </div>
+                            <div class="formInnerDiv position-relative">
+                                <label>Mobile Number <span>*</span> </label>
+                                <input type="number" name="phone" id="mobileNumber">
+                                <span class="errmsg"></span>
+                            </div>
+                            <div class="formInnerDiv position-relative">
+                                <label>Company <span>*</span> </label>
+                                <input type="text" name="company">
+                                <span class="errmsg"></span>
+                            </div>
+                            <div class="formInnerDiv position-relative">
+                                <label>Message <span>*</span> </label>
+                                <textarea name="message" class="w-100"></textarea>
+                                <span class="errmsg"></span>
+                            </div>
+                            <button type="submit" class="w-100 mt-2">SEND</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content ourServiceR">
+                <span class="close">&times;</span>
+                <h4>How Can We Help You?</h4>
+                <form id="myForm2">
+                    <div class="formInner">
+                        <div class="formInnerDiv position-relative">
+                            <label>Full Name <span>*</span> </label>
+                            <input type="text" name="full_name">
+                            <span class="errmsg"></span>
+                        </div>
+                        <div class="formInnerDiv position-relative">
+                            <label>Email <span>*</span> </label>
+                            <input type="email" name="email">
+                            <span class="errmsg"></span>
+                        </div>
+                        <div class="formInnerDiv position-relative">
+                            <label>Mobile Number <span>*</span> </label>
+                            <input type="number" name="phone" id="mobileNumber">
+                            <span class="errmsg"></span>
+                        </div>
+                        <div class="formInnerDiv position-relative">
+                            <label>Company <span>*</span> </label>
+                            <input type="text" name="company">
+                            <span class="errmsg"></span>
+                        </div>
+                        <div class="formInnerDiv position-relative">
+                            <label>Message <span>*</span> </label>
+                            <textarea name="message" class="w-100"></textarea>
+                            <span class="errmsg"></span>
+                        </div>
+                        <button type="submit" class="w-100 mt-2">SEND</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
