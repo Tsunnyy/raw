@@ -871,11 +871,13 @@ main .panel.active {
   opacity: 0;
   width: 0;
   height: min-content;
+  display: none;
 }
 
 .serviceContent.active {
   opacity: 1;
   width: 100%;
+  display: block;
 }
 
 .serviceContent h2 {

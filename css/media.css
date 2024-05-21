@@ -252,7 +252,8 @@
   }
 
   .ourServiceSection {
-    height: 110vh;
+    /* height: 110vh; */
+    margin-bottom: 50px;
   }
 
   .work_section .glide__slide.glide__slide--active {
@@ -285,6 +286,15 @@
     overflow-x: auto;
   }
 
+  .viewReportsSectionL ul li{
+    flex: 0 0 10%;
+    max-width: 10%;
+  }
+
+  .viewReportsSectionR, .viewReportsModalTwo {
+    padding: 40px 15px 30px;
+  }
+
   .serviceContentLists ul {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -294,7 +304,8 @@
   }
 
   .viewReportsSectionL {
-    padding: 0;
+    padding: 15px;
+    height: fit-content;
   }
 
   .ourServiceSection .ourServiceMain {
@@ -364,5 +375,25 @@
     right: 0;
     margin: auto;
     padding: 18px;
+  }
+  .viewReportsSectionMain{
+    display: flex;
+    flex-direction: column;
+  }
+  .viewReportsSectionRMain{
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .viewReportsSectionRModal{
+    grid-template-columns: 1fr;
+  }
+  .viewReportsSectionR svg{
+    top: 12px;
+  }
+  .viewReportsSectionRModalL button{
+    margin: 0;
+  }
+  .ourTeamText{
+    top: 0;
   }
 }
