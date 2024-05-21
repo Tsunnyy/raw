@@ -971,7 +971,7 @@ $(document).ready(function () {
         });
 
         // Close modal when close button is clicked
-        $(".close").on("click", function () {
+        $(".closeReport").on("click", function () {
           $("#downloadReport").css("display", "none");
         });
 
