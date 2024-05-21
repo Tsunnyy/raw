@@ -155,18 +155,58 @@ heroPage.to(
   "a"
 );
 
-gsap.from(".page1LastPart", {
-  opacity: 0,
-  x: 1000,
-  duration: 3,
-  scrollTrigger: {
-    trigger: ".page1LastPart",
-    // markers: true,
-    start: "top -250%",
-    end: "bottom top",
-    yoyo: true,
-    scrub: 3,
+// gsap.from(".page1LastPart", {
+//   opacity: 0,
+//   x: 1000,
+//   duration: 3,
+//   scrollTrigger: {
+//     trigger: ".page1LastPart",
+//     // markers: true,
+//     start: "top -250%",
+//     end: "bottom top",
+//     yoyo: true,
+//     scrub: 3,
+//   },
+// });
+
+gsap.registerPlugin(ScrollTrigger);
+
+ScrollTrigger.matchMedia({
+  // Media query for screens with width from 0 to 767px
+  "(max-width: 767px)": function () {
+    // Animation and ScrollTrigger settings for small screens
+    gsap.from(".page1LastPart", {
+      opacity: 0,
+      x: 1000,
+      duration: 3,
+      scrollTrigger: {
+        trigger: ".page1LastPart",
+        // markers: true,
+        start: "top top",
+        end: "bottom -100%",
+        yoyo: true,
+        scrub: 3,
+      },
+    });
   },
+
+  // Media query for screens with width 768px and above
+  "(min-width: 768px)": function () {
+    // Animation and ScrollTrigger settings for larger screens
+    gsap.from(".page1LastPart", {
+      opacity: 0,
+      x: 1000,
+      duration: 3,
+      scrollTrigger: {
+        trigger: ".page1LastPart",
+        // markers: true,
+        start: "top -250%",
+        end: "bottom top",
+        yoyo: true,
+        scrub: 3,
+      },
+    });
+  }
 });
 
 // let mm = gsap.matchMedia();
