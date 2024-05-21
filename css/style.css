@@ -131,6 +131,10 @@ body {
   line-height: 1;
 }
 
+.no-scroll {
+  overflow: hidden !important;
+}
+
 ol,
 ul {
   list-style: none;
@@ -197,9 +201,14 @@ body {
   margin: 0 40px;
   left: 0;
   right: 0;
-  top: 25px;
+  top: -100px;
   margin: auto;
   z-index: 9;
+  transition: .5s all;
+}
+
+.fixedDiv.show {
+  top: 25px;
 }
 
 nav {
@@ -899,7 +908,12 @@ main .panel.active {
   color: #777777;
 }
 
-.ourServiceR h4 {
+.ourSecviceMobText {
+  display: none;
+}
+
+.ourServiceR h4,
+.ourSecviceMobText {
   font-family: Gilroy-Semibold;
   font-size: 18px;
   font-weight: 400;
@@ -1370,7 +1384,7 @@ input:-webkit-autofill:active {
   height: 100%;
   overflow: auto;
   background: #ffffffb2;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
 }
 
 /* Modal Content */

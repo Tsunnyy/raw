@@ -766,14 +766,17 @@ var btn = document.querySelector(".myBtn");
 btn.onclick = function () {
   var modal = document.querySelector(".modal");
   modal.style.display = "block";
+  document.body.classList.add("no-scroll")
 };
 
 span.onclick = function () {
   modal.style.display = "none";
+  document.body.classList.remove("no-scroll")
 };
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    document.body.classList.remove("no-scroll")
   }
 };
 
@@ -909,18 +912,15 @@ $(document).ready(function () {
     $.ajax(settings).done(function (response) {
       let parseResponse = JSON.parse(response);
       let data = parseResponse.data.report_details;
-      let specificElementData = `<div class="viewReportsSectionRModalL position-relative"><img src=${
-        data.thumbnail_2_url
-      } alt=${data.report_name}> <span>
+      let specificElementData = `<div class="viewReportsSectionRModalL position-relative"><img src=${data.thumbnail_2_url
+        } alt=${data.report_name}> <span>
       ${parseResponse.data.insights_type[data.insights_type]}
       |
       ${parseResponse.data.industry[data.industry]} 
       </span> 
-      <h2>${data.report_name}</h2><h3>${
-        data.report_date
-      }</h3><button data-id=${currentElement}>Download</button></div><div class="viewReportsSectionRModalR"><p>${
-        data.long_desc
-      }</p></div>`;
+      <h2>${data.report_name}</h2><h3>${data.report_date
+        }</h3><button data-id=${currentElement}>Download</button></div><div class="viewReportsSectionRModalR"><p>${data.long_desc
+        }</p></div>`;
       $(".viewReportsSectionRModal").html(specificElementData);
       $(".downloadModal #reportHiddenId").val(window.btoa(currentElement));
 
@@ -1189,7 +1189,7 @@ $(window).scroll(function (event) {
 
 $(window).scroll(function (event) {
   let scroll = $(window).scrollTop();
-  console.log(scroll, workSection.top);
+  // console.log(scroll, workSection.top);
   if (scroll > workSection.top && scroll < workSection.bottom) {
     $("aside .asideTab2").addClass("active").siblings().removeClass("active");
   }

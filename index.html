@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="loader">
+    <!-- <div class="loader">
         <span>
             <svg width="104" height="77" viewBox="0 0 104 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -36,7 +36,7 @@
             </svg>
         </span>
         <p>The management consultancy for what is <br> <span>built</span> next…</p>
-    </div>
+    </div> -->
 
     <div class="scrollToExplore">
         <div class="mouseWithScroll">
@@ -52,7 +52,7 @@
         <p>Scroll to explore</p>
     </div>
 
-    <div class="fixedDiv">
+    <div class="fixedDiv show">
         <nav class="padding-lr">
             <div class="logoWIthSearchDropdown">
                 <a href="index.html"><img src="/images/logo.svg" alt="Raw Logo"></a>
@@ -197,7 +197,14 @@
     <main>
         <div class="downloadModal" id="downloadReport">
             <div class="ourServiceR">
-                <h4>Download Report</h4>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h4>Download Report</h4>
+                    <div class="close"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M400 145.49L366.51 112L256 222.51L145.49 112L112 145.49L222.51 256L112 366.51L145.49 400L256 289.49L366.51 400L400 366.51L289.49 256z" />
+                        </svg></div>
+                </div>
                 <div class="errBox"></div>
                 <form id="download-report">
                     <div class="formInner">
@@ -577,6 +584,7 @@
 
         <div id="panel5" class="panel heightFull ourServiceSection">
             <div class="ourServiceMain">
+                <h4 class="ourSecviceMobText">Our Services</h4>
                 <div class="ourServiceL">
                     <div class="w3-bar w3-black">
                         <button rel="serv1" class="w3-bar-item w3-button active">Developers</button>
@@ -922,6 +930,7 @@
                 <span class="circle"></span>
                 <span class="circle"></span>
                 <div class="ourServiceL">
+                    <h4 class="ourSecviceMobText">Contact Us</h4>
                     <div class="officeDetails">
                         <div class="officeDetailsInner">
                             <span>Address</span>

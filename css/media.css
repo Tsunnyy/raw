@@ -242,9 +242,9 @@
     font-size: 10px;
   }
 
-  .heightFull {
+  /* .heightFull {
     height: unset;
-  }
+  } */
 
   .work_section,
   .hero_section {
@@ -252,7 +252,7 @@
   }
 
   .ourServiceSection {
-    /* height: 110vh; */
+    height: 100%;
     margin-bottom: 50px;
   }
 
@@ -271,6 +271,7 @@
   .reportsSectionL img.active {
     max-width: 200px;
     margin: auto;
+    height: auto;
   }
 
   .viewReportsSection {
@@ -286,12 +287,13 @@
     overflow-x: auto;
   }
 
-  .viewReportsSectionL ul li{
+  .viewReportsSectionL ul li {
     flex: 0 0 10%;
     max-width: 10%;
   }
 
-  .viewReportsSectionR, .viewReportsModalTwo {
+  .viewReportsSectionR,
+  .viewReportsModalTwo {
     padding: 40px 15px 30px;
   }
 
@@ -301,6 +303,7 @@
 
   .serviceContentLists ul li {
     font-size: 11px;
+    text-align: left;
   }
 
   .viewReportsSectionL {
@@ -309,7 +312,7 @@
   }
 
   .ourServiceSection .ourServiceMain {
-    padding: 20px 0;
+    padding: 40px 0 0;
   }
 
   .developerTabcontent,
@@ -318,13 +321,20 @@
     min-height: 300px;
   }
 
+  .ourSecviceMobText {
+    display: block;
+  }
+
   .ourTeamSliderInner img {
     max-width: 300px;
+    max-height: 250px;
+    object-fit: contain;
+    margin: auto;
   }
 
   .team {
     z-index: 10;
-    bottom: 0;
+    /* bottom: 0; */
   }
 
   .team.next-team {
@@ -338,6 +348,7 @@
   .ourTeamSliderInner h2 {
     font-size: 20px;
     line-height: 24.65px;
+    margin: 15px 0 5px;
   }
 
   .ourTeamSliderInner p {
@@ -345,8 +356,26 @@
     line-height: 16.8px;
   }
 
-  .reactUsSection .ourServiceL {
-    margin-top: 100px;
+  .reactUsSection .officeDetails {
+    margin-top: 10px;
+  }
+
+  .modal-content {
+    background-color: #fff;
+  }
+
+  .downloadModal .formInner {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .reactUsSection {
+    height: 100%;
+  }
+
+  .work_section .bigCircle::after {
+    width: 6rem;
+    height: 6rem;
   }
 
   .formInner {
@@ -376,24 +405,42 @@
     margin: auto;
     padding: 18px;
   }
-  .viewReportsSectionMain{
+
+  .viewReportsSectionMain {
     display: flex;
     flex-direction: column;
   }
-  .viewReportsSectionRMain{
+
+  .viewReportsSectionRMain {
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
   }
-  .viewReportsSectionRModal{
+
+  .viewReportsSectionRModal {
     grid-template-columns: 1fr;
   }
-  .viewReportsSectionR svg{
+
+  .viewReportsSectionR svg {
     top: 12px;
   }
-  .viewReportsSectionRModalL button{
+
+  .viewReportsSectionRModalL button {
     margin: 0;
   }
-  .ourTeamText{
-    top: 0;
+
+  .ourTeamText {
+    top: 88px;
+  }
+
+  .work_section .glide div[data-glide-el="controls"] {
+    inset: unset;
+    left: 0;
+    right: 0;
+    bottom: 120px;
+  }
+
+  .work_section .glide__slides .glide__slide,
+  .work_section .glide__slides img {
+    scale: .9;
   }
 }
