@@ -135,6 +135,10 @@ body {
   overflow: hidden !important;
 }
 
+.scrollToExplore.onMob{
+  display: none;
+}
+
 ol,
 ul {
   list-style: none;
@@ -201,14 +205,10 @@ body {
   margin: 0 40px;
   left: 0;
   right: 0;
-  top: -100px;
+  top: 35px;
   margin: auto;
   z-index: 9;
   transition: .5s all;
-}
-
-.fixedDiv.show {
-  top: 25px;
 }
 
 nav {

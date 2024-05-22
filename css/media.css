@@ -430,6 +430,7 @@
 
   .ourTeamText {
     top: 88px;
+    margin: 15px;
   }
 
   .work_section .glide div[data-glide-el="controls"] {
@@ -442,5 +443,28 @@
   .work_section .glide__slides .glide__slide,
   .work_section .glide__slides img {
     scale: .9;
+  }
+  .scrollToExplore{
+    display: none;
+  }
+  .scrollToExplore.onMob{
+    display: block;
+  }
+  .scrollToExplore.onMob svg{
+    margin: 0;
+    height: unset !important;
+  }
+  .scrollToExplore.onMob p{
+    margin: 0 !important;
+  }
+  .scrollToExplore.onMob .mouseWithScroll::after{
+    display: none;
+  }
+  #navbar{
+    background-color: #fff;
+    padding: 10px 0;
+  }
+  .fixedDiv{
+    top: 0;
   }
 }

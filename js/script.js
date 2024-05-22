@@ -60,7 +60,7 @@ tl.to(".loader svg", {
   height: "40px",
 });
 
-tl.from(".loader p", {
+tl.from(".loader p.loaderText", {
   opacity: 0,
   scale: 2,
   y: 200,
@@ -806,17 +806,16 @@ var btn = document.querySelector(".myBtn");
 btn.onclick = function () {
   var modal = document.querySelector(".modal");
   modal.style.display = "block";
-  document.body.classList.add("no-scroll")
 };
 
 span.onclick = function () {
   modal.style.display = "none";
-  document.body.classList.remove("no-scroll")
+  // document.body.classList.remove("no-scroll")
 };
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
-    document.body.classList.remove("no-scroll")
+    // document.body.classList.remove("no-scroll")
   }
 };
 
@@ -1294,3 +1293,33 @@ new Glide(".glide.workSectioGlide", {
     // Add more breakpoints as needed
   }
 }).mount();
+
+
+function handleScroll() {
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  };
+}
+
+function setupScrollBehavior() {
+  if (window.innerWidth <= 767) {
+    handleScroll();
+  } else {
+    window.onscroll = null;
+  }
+}
+
+// Initial setup
+setupScrollBehavior();
+
+// Re-check on window resize
+window.onresize = function () {
+  setupScrollBehavior();
+};
