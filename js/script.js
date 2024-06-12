@@ -131,7 +131,7 @@ heroPage.to(
 heroPage.to(
   ".heroImageTwoDiv span",
   {
-    x: 300,
+    x: 380,
     y: -100,
     duration: 2,
     opacity: 1,
