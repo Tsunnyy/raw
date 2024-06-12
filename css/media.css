@@ -101,6 +101,18 @@
   .ourServiceMain {
     grid-template-columns: 1fr 300px;
   }
+
+  .newDetails {
+    gap: 30px;
+  }
+
+  .searchDropdownTabContent ul {
+    gap: 5px 10px;
+  }
+
+  .searchDropdownTabContent ul li {
+    font-size: 10px;
+  }
 }
 
 
@@ -187,6 +199,25 @@
 
   .viewReportsSectionRInner img {
     height: 140px;
+  }
+
+  .newDetails {
+    max-width: 75%;
+    margin-inline: auto;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .newDetails br {
+    display: none;
+  }
+
+  .newDetailsInner span {
+    font-size: 26px;
+  }
+
+  .newDetailsInner h4 {
+    font-size: 12px;
   }
 }
 
@@ -444,27 +475,49 @@
   .work_section .glide__slides img {
     scale: .9;
   }
-  .scrollToExplore{
+
+  .scrollToExplore {
     display: none;
   }
-  .scrollToExplore.onMob{
+
+  .scrollToExplore.onMob {
     display: block;
   }
-  .scrollToExplore.onMob svg{
+
+  .scrollToExplore.onMob svg {
     margin: 0;
     height: unset !important;
   }
-  .scrollToExplore.onMob p{
+
+  .scrollToExplore.onMob p {
     margin: 0 !important;
   }
-  .scrollToExplore.onMob .mouseWithScroll::after{
+
+  .scrollToExplore.onMob .mouseWithScroll::after {
     display: none;
   }
-  #navbar{
+
+  #navbar {
     background-color: #fff;
     padding: 10px 0;
   }
-  .fixedDiv{
+
+  .fixedDiv {
     top: 0;
+  }
+
+  .newDetails {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .paddingWithBorderLr {
+    padding: 10px 0;
+    border-block: 1px solid #D9D9D9;
+    border-inline: none;
+  }
+
+  .extraDetailTextParent {
+    display: none;
   }
 }

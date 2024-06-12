@@ -135,7 +135,7 @@ body {
   overflow: hidden !important;
 }
 
-.scrollToExplore.onMob{
+.scrollToExplore.onMob {
   display: none;
 }
 
@@ -1184,7 +1184,7 @@ input:-webkit-autofill:active {
 }
 
 .searchDropdownContent.show {
-  height: 500px;
+  height: 250px;
   display: block;
   opacity: 1;
 }
@@ -1218,13 +1218,20 @@ input:-webkit-autofill:active {
   padding: 0 20px 20px;
 }
 
+.searchDropdownTabContent ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-top: 20px;
+}
+
 .searchDropdownTabContent ul li {
   font-family: Gilroy-Light;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 14.4px;
   text-align: left;
-  margin-top: 22px;
+  margin-top: 0;
   color: #353535;
   transition: 0.5s all;
   cursor: pointer;
@@ -1776,3 +1783,73 @@ img.layer.layer2 {
 /* .glide__slide:not(.glide__slide--active):not(:first-child) {
   background-color: blue;
 } */
+
+.newDetails {
+  background: #FFFFFFCC;
+  box-shadow: 0px 4px 32.3px 0px #0000000D;
+  border: 2px solid #F7F7F7;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 50px;
+  margin-top: 30px;
+}
+
+.paddingWithBorderLr {
+  padding: 0 30px 0 20px;
+  border-inline: 1px solid #D9D9D9;
+}
+
+.newDetailsInner span {
+  font-family: Gilroy-Semibold;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 42.09px;
+  color: #1C6FF4;
+}
+
+.newDetailsInner h4 {
+  font-family: Gilroy-Medium;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.8px;
+  color: #000000;
+  margin: 5px 0 0;
+}
+
+.extraDetailTextOnMain {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  width: 100%;
+  /* gap: 0px; */
+}
+
+.extraDetailTextParent {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.extraDetailTextOnMain ul li:first-child {
+  color: #989898;
+}
+
+.extraDetailTextOnMain ul li,
+.extraDetailTextOnMain h4 {
+  font-family: Gilroy-Semibold;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.86px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.extraDetailTextOnMain h4 {
+  margin: 0;
+}

@@ -94,6 +94,8 @@ const heroPage = gsap.timeline({
   },
 });
 
+
+
 heroPage.to(
   ".logoDiv img",
   {
@@ -153,6 +155,22 @@ heroPage.to(
     duration: 2,
   },
   "a"
+);
+
+gsap.from(
+  [".extraDetailTextOnMain ul li", ".extraDetailTextOnMain h4"],
+  {
+    opacity: 0,
+    duration: 6,
+    stagger: .7,
+    scrollTrigger: {
+      trigger: ".extraDetailTextOnMain",
+      start: "top 0",
+      end: "bottom -50%",
+      yoyo: true,
+      scrub: 2,
+    },
+  }
 );
 
 // gsap.from(".page1LastPart", {
@@ -258,6 +276,30 @@ secondPage.from([".whatWeDoSectionOne h2", ".whatWeDoSectionOne p"], {
   scrub: true,
   stagger: 0.4,
 });
+
+secondPage.from(".newDetails", {
+  opacity: 0,
+  duration: 1,
+}, "same");
+
+secondPage.from(".newDetails .newDetailsInner", {
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+  // yoyo: true,
+  scrub: 5,
+  stagger: 0.4,
+}, "same");
+
+secondPage.from(".newDetailsInner span", {
+  opacity: .2,
+  duration: 1,
+  ease: "power2.out",
+  // yoyo: true,
+  scrub: 5,
+  stagger: 0.4,
+}, "same");
+
 
 // Click event handler
 $("#goToSlider").on("click", function () {
