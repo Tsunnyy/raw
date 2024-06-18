@@ -56,7 +56,7 @@ tl.to(".loader svg path", {
 });
 
 tl.to(".loader svg", {
-  width: "min-content",
+  width: "fit-content",
   height: "40px",
 });
 
@@ -265,6 +265,22 @@ gsap.from(".work_section", {
   },
 });
 
+gsap.to(".toStopScrnn", {
+  width: 400,
+  height: 400,
+  // backgroundColor: "red",
+  duration: 10,
+  scrollTrigger: {
+    pin: true,
+    trigger: ".work_section",
+    start: "top top",
+    end: "bottom -80%",
+    yoyo: true,
+    scrub: 2,
+    // markers: true
+  },
+})
+
 secondPage.from([".whatWeDoSectionOne h2", ".whatWeDoSectionOne p"], {
   opacity: 0,
   duration: 1,
@@ -288,7 +304,7 @@ secondPage.from(".newDetails .newDetailsInner", {
   ease: "power2.out",
   // yoyo: true,
   scrub: 5,
-  stagger: 0.4,
+  stagger: 0.2,
 }, "same");
 
 secondPage.from(".newDetailsInner span", {

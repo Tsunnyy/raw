@@ -1840,6 +1840,7 @@ img.layer.layer2 {
 
 .extraDetailTextOnMain ul li:first-child {
   color: #989898;
+  margin-left: 20px;
 }
 
 .extraDetailTextOnMain ul li,
@@ -1850,8 +1851,17 @@ img.layer.layer2 {
   line-height: 14.86px;
   color: #000000;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: stretch;
+  align-items: start;
+  gap: 6px;
 }
 
 .extraDetailTextOnMain h4 {
   margin: 0 0 -40px;
+}
+
+.toStopScrnn{
+  position: absolute;
+  inset: 0;
 }
